@@ -82,16 +82,22 @@ arguments = [
         "choices": ["off", "ask", "auto"]
     },
     {
-        "name": "threads",
+        "name": "n_threads",
         "nickname": "thr",
         "help_text": "number of threads on cpu",
         "type": int
     },
     {
-        "name": "num_gpu_layers",
+        "name": "n_gpu_layers",
         "nickname": "ngl",
         "help_text": "number of layers to offload to gpu",
         "type": int
+    },
+    {
+        "name": "gguf_quality",
+        "nickname": "q",
+        "help_text": "(experimental) value from 0-1 which will select the gguf quality/quantization level. lower = smaller, faster, more quantized",
+        "type": float,
     }
 ]
 
